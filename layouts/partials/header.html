@@ -72,6 +72,8 @@ crossorigin="anonymous"></script>
 <!-- Google Analytics -->
 {{ template "_internal/google_analytics_async.html" . }}
 
+{{ partial "hotjar.html" }}
+
 <!-- RSS -->
 {{ if .RSSLink }}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
